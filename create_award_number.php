@@ -36,43 +36,56 @@
             <tbody>
                 <tr>
                     <th scope="row">Special Prize</th>
-                    <td><input type="number" name="num1"></td>
+                    <td colspan="2"><input type="number" name="num1"><br>
+                    NT$10,000,000 for matching all the digits from the above special prize winning numbers.</td>
+                    <td></td>
                 </tr>
                 <tr>
                     <th scope="row">Grand Prize</th>
-                    <td><input type="number" name="num2"></td>
+                    <td colspan="2"><input type="number" name="num2"><br>
+                    NT$2,000,000 for matching all the digits from the above grand prize winning numbers.</td>
+                    <td></td>
                 </tr>
                 <tr>
                     <th scope="row">Regular Prizes</th>
-                    <td><input type="number" name="num3[]"><br>
+                    <td colspan="2"><input type="number" name="num3[]"><br>
                     <input type="number" name="num3[]"><br>
                     <input type="number" name="num3[]"><br>
-                    <input type="number" name="num3[]"><br></td>
+                    <input type="number" name="num3[]"><br>
+                    NT$200,000 for matching all the digits from any of the above first prize winning numbers.</td>
+                    <td></td>
                 </tr>
                 <tr>
                     <th scope="row">2nd Prize</th>
-                    <td><input type="number" name=""></td>
+                    <td colspan="2">NT$40,000 for matching the last seven digits from any of the first prize winning numbers.</td>
+                    <td></td>
                 </tr>
                 <tr>
                     <th scope="row">3rd Prize</th>
-                    <td><input type="number" name=""></td>
+                    <td colspan="2">NT$10,000 for matching the last six digits from any of the first prize winning numbers.</td>
+                    <td></td>
                 </tr>
                 <tr>
                     <th scope="row">4th Prize</th>
-                    <td><input type="number" name=""></td>
+                    <td colspan="2">NT$4,000 for matching the last five digits from any of the first prize winning numbers.</td>
+                    <td></td>
                 </tr>
                 <tr>
                     <th scope="row">5th Prize</th>
-                    <td><input type="number" name=""></td>
+                    <td colspan="2">NT$1,000 for matching the last four digits from any of the first prize winning numbers.</td>
+                    <td></td>
                 </tr>
                 <tr>
                     <th scope="row">6th Prize</th>
-                    <td><input type="number" name=""></td>
+                    <td colspan="2">NT$200 for matching the last three digits from any of the first prize winning numbers.</td>
+                    <td></td>
                 </tr>
                 <tr>
                     <th scope="row">Additional 6th Prizes</th>
-                    <td><input type="number" name="num4[]"><br>
-                    <input type="number" name="num4[]"></td>
+                    <td colspan="2"><input type="number" name="num4[]"><br>
+                    <input type="number" name="num4[]"><br>
+                    NT$200 for matching the last three digits above to the ones which appear at end of the total of the eight digits on an invoice.</td>
+                    <td></td>
                 </tr>
             </tbody>
             

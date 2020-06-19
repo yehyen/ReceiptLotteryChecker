@@ -85,7 +85,7 @@ $year = date("Y");
                 <div class="tab-pane fade show active">
                     <table class="table table-hover">
                         <thead>
-                            <tr>
+                            <tr class="p-3 mb-2 bg-secondary text-white">
                                 <th scope="col">Month / Year</th>
                                 <th scope="col"><?= $monthStr[$period]; ?> / <?= $year; ?></th>
                                 <th scope="col"></th>
@@ -94,66 +94,71 @@ $year = date("Y");
                         <tbody>
                             <tr>
                                 <th scope="row">Special Prize</th>
-                                <td><?php
+                                <td class="text-danger"><?php
                                     if (!empty($num1['number'])) {
                                         echo $num1['number'];
                                     };
-
-                                    ?></td>
+                                    ?><br>
+                                    <p class="text-dark">NT$10,000,000 for matching all the digits from the above special prize winning numbers.</p>
+                                </td>
                                     <td><a href="check_award_number.php?aw=1&year=<?=$year;?>&period=<?=$period;?>">Check</a></td>
                             </tr>
                             <tr>
                                 <th scope="row">Grand Prize</th>
-                                <td><?php
+                                <td class="text-danger"><?php
                                     if (!empty($num2['number'])) {
                                         echo $num2['number'];
                                     };
-
-                                    ?></td>
+                                    ?><br>
+                                    <p class="text-dark">NT$2,000,000 for matching all the digits from the above grand prize winning numbers.</p>
+                                </td>
                                     <td><a href="check_award_number.php?aw=2&year=<?=$year;?>&period=<?=$period;?>">Check</a></td>
                             </tr>
                             <tr>
                                 <th scope="row">Regular Prizes</th>
-                                <td><?php
+                                <td class="text-danger"><?php
                                     foreach ($num3 as $num) {
                                         echo $num['number'] . "<br>";
                                     }
-                                    ?></td>
+                                    ?><br>
+                                    <p class="text-dark">NT$200,000 for matching all the digits from any of the above first prize winning numbers.</p>
+                                </td>
                                     <td><a href="check_award_number.php?aw=3&year=<?=$year;?>&period=<?=$period;?>">Check</a></td>
                             </tr>
                             <tr>
                                 <th scope="row">2nd Prize</th>
-                                <td></td>
+                                <td>NT$40,000 for matching the last seven digits from any of the first prize winning numbers.</td>
                                 <td><a href="check_award_number.php?aw=4&year=<?=$year;?>&period=<?=$period;?>">Check</a></td>
                             </tr>
                             <tr>
                                 <th scope="row">3rd Prize</th>
-                                <td></td>
+                                <td>>NT$10,000 for matching the last six digits from any of the first prize winning numbers.</td>
                                 <td><a href="check_award_number.php?aw=5&year=<?=$year;?>&period=<?=$period;?>">Check</a></td>
                             </tr>
                             <tr>
                                 <th scope="row">4th Prize</th>
-                                <td></td>
+                                <td>NT$4,000 for matching the last five digits from any of the first prize winning numbers.</td>
                                 <td><a href="check_award_number.php?aw=6&year=<?=$year;?>&period=<?=$period;?>">Check</a></td>
                             </tr>
                             <tr>
                                 <th scope="row">5th Prize</th>
-                                <td></td>
+                                <td>NT$1,000 for matching the last four digits from any of the first prize winning numbers.</td>
                                 <td><a href="check_award_number.php?aw=7&year=<?=$year;?>&period=<?=$period;?>">Check</a></td>
                             </tr>
                             <tr>
                                 <th scope="row">6th Prize</th>
-                                <td></td>
+                                <td>NT$200 for matching the last three digits from any of the first prize winning numbers.</td>
                                 <td><a href="check_award_number.php?aw=8&year=<?=$year;?>&period=<?=$period;?>">Check</a></td>
                             </tr>
                             <tr>
                                 <th scope="row">Additional 6th Prizes</th>
-                                <td>
+                                <td class="text-danger">
                                     <?php
                                     foreach ($num4 as $num) {
                                         echo $num['number'] . "<br>";
                                     }
-                                    ?>
+                                    ?><br>
+                                     <p class="text-dark">NT$200 for matching the last three digits above to the ones which appear at end of the total of the eight digits on an invoice.</p>
                                 </td>
                                 <td><a href="check_award_number.php?aw=9&year=<?=$year;?>&period=<?=$period;?>">Check</a></td>
                         </tbody>

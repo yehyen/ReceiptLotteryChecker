@@ -122,7 +122,9 @@
                 }
 
                 if (mb_substr($ins['number'], $start, $len) == $target_num) {
-                  echo "<span style='color:red;font-size:20px'>" . $ins['number'] . "Congratulation！ You win！</span>";
+                  echo "<span style='color:red;font-size:20px'>" . $ins['number'];
+                  echo "<br>";
+                  echo "Congratulation！ You win！</span>";
                   echo "<br>";
                 }
               }
